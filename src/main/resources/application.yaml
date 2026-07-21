@@ -1,3 +1,9 @@
 spring:
   application:
     name: sql-ex
+  datasource:
+    url: ${DB_URL:jdbc:postgresql://localhost:5432/sqlex}
+    username: ${DB_USERNAME:sqlex}
+    password: ${DB_PASSWORD:sqlex}
+  flyway:
+    enabled: true
